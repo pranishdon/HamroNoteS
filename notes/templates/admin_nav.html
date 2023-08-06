@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+  {% load static %}
+  <title> Note Sharing Sites </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/mystyle.css'%}">
+  <style>
+    .dropdown:hover .dropdown-menu
+    {
+      display:block;
+    }
+  </style>
+</head>
+<body>
+
+ <!-- navigation bar ho yo chai -->
+ <div class="batta">
+  <!-- <div class="imgarrange">
+      <a href="#"><img src="#" height="40" width="100" ></a>
+ </div> -->
+<ul>
+<li class="#"><a href="{% url 'admin_home' %}"><i class="fa fa-home" ></i> Home</a></li>
+
+<li class="nav=item dropdown">
+  <a class="nav-linnk dropdown-toggle" href="#" data-toggle="dropdown">View Notes</a>
+
+  <DIV class="dropdown-menu">
+    <a class="dropdown-item" href="{% url 'pending_notes'%}"> Pending</a>
+    <a class="dropdown-item" href="{% url 'accepted_notes'%}"> Accepted</a>
+    <a class="dropdown-item" href="{% url 'rejected_notes'%}"> Rejected</a>
+    <a class="dropdown-item" href="{% url 'all_notes'%}"> All Notes</a>
+
+  </DIV>
+</li>
+<!-- <li><a href="#"><i class="fa fa-phone" ></i>Contact</a>
+  <div class="subcontact">
+      <ul>
+          <li class="innerline"><a href="#">B</a><i class="fa fa-angle-right" ></i>
+            <div class="inside">
+              <ul>
+                  <li><a href="#">B1</a></li>
+                  <li><a href="#">B2 </a></li>
+                   <li><a href="#">B3 </a></li>
+               </ul>
+            </div>
+          </li>
+
+
+          <li class="innerline"><a href="#">BE </a><i class="fa fa-angle-right" ></i>
+              <div class="inside">
+                  <ul>
+                      <li><a href="#">B1</a></li>
+                      <li><a href="#">B2 </a></li>
+                       <li><a href="#">B3 </a></li>
+                   </ul>
+                </div>
+           </li>
+          <li><a href="#">BE </a><i class="fa fa-angle-right" ></i></li>
+       </ul>
+    </div>
+
+</li> -->
+<li><a href="{% url 'view_users' %}"><i class="fa fa-login" ></i>View User</a></li>
+<li><a href="{% url 'logout' %}"><i class="fa fa-login" ></i>Logout</a></li>
+
+
+</ul>
+</div>
+
+<!-- image halley thau takka -->
+
+
+
+</body>
+</html>
+
+
+{% block body %}
+
+{% endblock %}
+
+{% include 'footer.html' %}

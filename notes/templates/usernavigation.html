@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+  {% load static %}
+  <title> Note Sharing Sites </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/mystyle.css'%}">
+  <style>
+    .dropdown:hover .dropdown-menu
+    {
+      display:block;
+    }
+    .dropdown-item{
+        color:white;
+    }
+
+.btn-group{
+
+    width: 100px;
+    margin: 20px;
+    padding: 0px;
+}
+.button{
+    border-radius: 60px;
+}
+.btn-group:hover .dropdown-menu
+    {
+      display:block;
+    }
+  </style>
+</head>
+<body>
+
+ <!-- navigation bar ho yo chai -->
+ <div class="batta">
+  
+<ul>
+<li><a href="{% url 'profile' %}"><i class="fa fa-home" ></i>Home</a></li>
+
+<li class="#"><a  href="{% url 'upload_notes' %}">Upload&nbsp;Notes</a></li>
+
+<li><a href="{% url 'view_mynotes' %}"><i class="fa fa-login" ></i>View&nbsp;Notes</a></li>
+<li><a href="{% url 'logout' %}"><i class="fa fa-logout" ></i>Logout</a></li>
+
+<div class="btn-group">
+     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Welcome {{request.user.first_name}} </button>
+     <DIV class="dropdown-menu">
+        <a class="dropdown-item" href="{% url 'profile' %}"> Profile</a>
+        <a class="dropdown-item" href="{% url 'edit_profile' %}"> Edit</a>
+        <a class="dropdown-item" href="{% url 'cpassword' %}"> change password</a>
+    
+      </DIV>
+
+</ul>
+</div>
+
+
+
+
+
+
+</body>
+</html>
+
+<br>
+<br>
+
+{% block body %}
+
+{% endblock %}
+
+{% include 'footer.html' %}

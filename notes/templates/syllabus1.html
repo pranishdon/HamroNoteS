@@ -1,0 +1,274 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body%}
+
+
+
+<style>/* Styles for the header */
+    header {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 20px;
+    }
+    
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    
+    /* Styles for the navigation */
+    nav {
+      background-color: #7c6ec9;
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    
+    nav li {
+      margin-right: 20px;
+    }
+    
+    nav a {
+      color: #ffffff;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+    }
+    
+    nav a:hover {
+      color: #1a1a1a;
+    }
+    
+    /* Styles for the main content */
+    main {
+      margin: 20px;
+    }
+    
+    section {
+      background-color: #7c6ec9;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    section h2 {
+      color: #ffffff;
+      font-size: 24px;
+      margin-top: 0;
+    }
+    
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    
+    li {
+    color: #ffffff;
+      margin-bottom: 10px;
+    }
+    
+    /* Styles for the footer */
+    footer {
+      background-color: #1a1a1a;
+      color: #ffffff;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    footer p {
+      margin: 0;
+    }
+    
+    footer a {
+      color: #ffffff;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+    }
+    
+    footer a:hover {
+      color: #f2f2f2;
+    }
+    .pranish{
+       color:#7c6ec9;
+       text-size-adjust: 54px;
+    }
+</style>
+    
+<body>
+    <head>
+      <meta charset="UTF-8" />
+      <title>Mechanical Engineering Syllabus</title>
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+      <link rel="stylesheet" href="{% static 'css/mystyle1.css'%}">
+    </head>
+    <body>
+      <header>
+        <h1 class="text-center">Mechanical Engineering Syllabus</h1>
+     
+ 
+      </header>
+  
+      <nav>
+        <ul>
+          <li><a href="#semester1">Semester 1</a></li>
+          <li><a href="#semester2">Semester 2</a></li>
+          <li><a href="#semester3">Semester 3</a></li>
+          <li><a href="#semester4">Semester 4</a></li>
+          <li><a href="#semester5">Semester 5</a></li>
+          <li><a href="#semester6">Semester 6</a></li>
+          <li><a href="#semester7">Semester 7</a></li>
+          <li><a href="#semester8">Semester 8</a></li>
+        </ul>
+      </nav>
+  
+      <main>
+        <section id="semester1">
+          <h2>Semester 1</h2>
+          <ul>
+            <li>Mathematics I</li>
+            <li>Physics I</li>
+            <li>Chemistry I</li>
+            <li>Engineering Graphics</li>
+            <li>Introduction to Mechanical Engineering</li>
+            <li>Environmental Studies</li>
+            <li>Communication Skills</li>
+          </ul>
+        </section>
+  
+        <section id="semester2">
+          <h2>Semester 2</h2>
+          <ul>
+            <li>Mathematics II</li>
+            <li>Physics II</li>
+            <li>Chemistry II</li>
+            <li>Engineering Mechanics</li>
+            <li>Basic Electrical and Electronics Engineering</li>
+            <li>Humanities and Social Sciences</li>
+            <li>Engineering Drawing and Graphics</li>
+          </ul>
+        </section>
+  
+        <section id="semester3">
+          <h2>Semester 3</h2>
+          <ul>
+            <li>Mathematics III</li>
+            <li>Material Science and Engineering</li>
+            <li>Thermodynamics</li>
+            <li>Mechanics of Solids</li>
+            <li>Manufacturing Processes I</li>
+            <li>Fluid Mechanics and Machinery</li>
+            <li>Humanities and Social Sciences</li>
+          </ul>
+        </section>
+  
+        <section id="semester4">
+          <h2>Semester 4</h2>
+          <ul>
+            <li>Mathematics IV</li>
+            <li>Manufacturing Processes II</li>
+            <li>Machine Design I</li>
+            <li>Heat and Mass Transfer</li>
+            <li>Applied Thermodynamics</li>
+            <li>Engineering Elective I</li>
+            <li>Humanities and Social Sciences</li>
+          </ul>
+        </section>
+
+        <section id="semester5">
+          <h2>Semester 5</h2>
+          <ul>
+            <li>Applied Thermodynamics</li>
+            <li>Fluid Mechanics and Machinery</li>
+            <li>Mechanics of Machines</li>
+            <li>Strength of Materials and Materials Science</li>
+            <li>Metrology and Measurements</li>
+            <li>Manufacturing Technology</li>
+            <li>Design of Machine Elements</li>
+          </ul>
+        </section>
+
+
+        <section id="semester6">
+          <h2>Semester 6</h2>
+          <ul>
+            <li>Design of Machine Elements I</li>
+            <li>Manufacturing Technology II</li>
+            <li>Thermal Engineering II</li>
+            <li>Applied Thermodynamics</li>
+            <li>Control Engineering</li>
+            <li>Engineering Metrology and Measurements</li>
+            <li>Professional Elective I</li>
+            <li>Open Elective I</li>
+          </ul>
+        </section>
+  
+       
+  
+        <section id="semester7">
+          <h2>Semester 7</h2>
+          <ul>
+            <li>Design of Machine Elements II</li>
+            <li>Heat and Mass Transfer</li>
+            <li>Refrigeration and Air Conditioning</li>
+            <li>Energy Conversion Systems</li>
+            <li>Power Plant Engineering</li>
+            <li>Professional Elective II</li>
+            <li>Professional Elective III</li>
+            <li>Open Elective II</li>
+          </ul>
+        </section>
+  
+        <section id="semester8">
+          <h2>Semester 8</h2>
+          <ul>
+            <li>Finite Element Methods</li>
+            <li>Industrial Engineering</li>
+            <li>Robotics and Automation</li>
+            <li>Design of Heat Exchangers</li>
+            <li>Composite Materials and Structures</li>
+            <li>Professional Elective IV</li>
+            <li>Professional Elective V</li>
+            <li>Open Elective III</li>
+          </ul>
+        </section>
+      </main>
+    </body>
+  </html>
+  
+
+
+
+<script>// Get all the semester link elements
+    const semesterLinks = document.querySelectorAll('nav a');
+    
+    // Add a click event listener to each semester link
+    semesterLinks.forEach(link => {
+      link.addEventListener('click', (event) => {
+        // Prevent the default behavior of the link (i.e., navigating to a new page)
+        event.preventDefault();
+        
+        // Get the ID of the section that corresponds to the clicked link
+        const targetId = link.getAttribute('href').substring(1);
+    
+        // Hide all the sections except the one with the target ID
+        const sections = document.querySelectorAll('main section');
+        sections.forEach(section => {
+          if (section.getAttribute('id') !== targetId) {
+            section.style.display = 'none';
+          } else {
+            section.style.display = 'block';
+          }
+        });
+      });
+    });
+    </script>
+
+
+{% endblock %}

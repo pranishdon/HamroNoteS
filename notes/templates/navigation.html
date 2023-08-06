@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+  {% load static %}
+  <title> Note Sharing Sites </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/mystyle.css'%}">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>   
+  <style>
+    .dropdown:hover .dropdown-menu
+    {
+      display:block;
+    }
+  </style>
+</head>
+
+<!-- marquee hincha -->
+<style>
+  marquee{
+  font-size: 15px;
+  font-weight: 800;
+  color: #6351ce;
+  font-family: sans-serif; 
+  }
+</style>
+<marquee behavior="" direction="" > Hamro Notes beta version</marquee>
+
+<!-- marquee hiddaina -->
+
+<body>
+  <script src ="{% static 'script.js' %}" type="text/javascript"></script>
+ <!-- navigation bar ho yo chai -->
+ <div class="batta">
+  <!-- <div class="imgarrange">
+      <a href="#"><img src="#" height="40" width="100" ></a>
+ </div> -->
+<ul>
+<li class="#"><a href="{% url 'index' %}"><i class="fa fa-home" ></i>  Home</a></li>
+
+
+<li><a href="{% url 'viewallnotes' %}"><i class="fa fa-login" ></i>Notes</a></li>
+
+<!-- <li class="nav=item dropdown">
+  <a class="nav-linnk dropdown-toggle" href="#" data-toggle="dropdown">EXTRA </a>
+
+  <DIV class="dropdown-menu">
+    <a class="dropdown-item" href="#"> Category</a>
+    <a class="dropdown-item" href="#"> Accepted</a>
+    <a class="dropdown-item" href="#"> Rejected</a>
+    <a class="dropdown-item" href="#"> All Notes</a>
+
+  </DIV>
+</li> -->
+
+
+
+
+<li><a href="{% url 'bookfinder' %}"><i class="fa fa-login" ></i>Books</a></li>
+
+<li class="nav=item dropdown">
+  <a class="nav-linnk dropdown-toggle" href="#" data-toggle="dropdown">Branch</a>
+
+  <DIV class="dropdown-menu">
+    <a class="dropdown-item" href="{% url 'computerscience'%}"> Computer Science</a>
+    <a class="dropdown-item" href="{% url 'Mechancial'%}"> Mechanical</a>
+    <a class="dropdown-item" href="{% url 'Civil'%}"> Civil</a>
+    <a class="dropdown-item" href="{% url 'Electrical'%}"> Electrical</a>
+    <a class="dropdown-item" href="{% url 'Electronics'%}"> Electronics</a>
+
+  </DIV>
+</li>
+<li><a href="{% url 'about' %}"><i class="fa fa-login" ></i>About&nbsp;us</a></li>
+
+<li class="nav=item dropdown">
+  <a class="nav-linnk dropdown-toggle" href="#" data-toggle="dropdown">Login </a>
+
+  <DIV class="dropdown-menu">
+    <a class="dropdown-item" href="{% url 'Admin' %}">Admin </a>
+    <a class="dropdown-item" href="{% url 'login' %}">Signup </a>
+
+  </DIV>
+</li>
+<li class="nav=item dropdown">
+  <a class="nav-linnk dropdown-toggle" href="#" data-toggle="dropdown">Syllabus</a>
+
+  <DIV class="dropdown-menu">
+    <a class="dropdown-item" href="{% url 'syllabus'%}"> Computer Science</a>
+    <a class="dropdown-item" href="{% url 'syllabus1'%}"> Mechanical</a>
+    <a class="dropdown-item" href="#"> Civil</a>
+    <a class="dropdown-item" href="#"> Electrical</a>
+    <a class="dropdown-item" href="#"> Electronics</a>
+
+  </DIV>
+</li>
+<li><a href="{% url 'contact' %}"><i class="fa fa-login" ></i>Contact&nbsp;us</a></li>
+</ul>
+</div>
+
+<!-- image halley thau takka -->
+
+
+
+</body>
+</html>
+
+
+{% block body %}
+
+{% endblock %}

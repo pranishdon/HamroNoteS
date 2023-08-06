@@ -1,0 +1,9 @@
+body{
+    background-image: url("/notes/static/images/alessio-soggetti-cfKC0UOZHJo-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: 'Ibarra Real Nova', serif;
+    background-repeat: no-repeat;
+    background-size: auto;
+}

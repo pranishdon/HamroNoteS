@@ -1,0 +1,244 @@
+*
+{
+    padding:0;
+    margin:0;
+}
+body{
+    background-image: url("/notes/static/images/alessio-soggetti-cfKC0UOZHJo-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: 'Ibarra Real Nova', serif;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.batta
+{
+   background-color:#6351ce;
+    text-align: center;
+}
+.batta ul{
+    display: inline-flex;
+    list-style: none;
+    color:rgb(255, 255, 255);
+}
+.batta ul li{
+    width: 100px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.batta ul li a{
+    text-decoration: none;
+    color:white;
+}
+.active, .batta ul li:hover{
+
+background: #514690;
+}
+.batta .fa{
+    margin-right: 8px;
+}
+.subcontact{
+    display:none;
+}
+.batta ul li:hover .subcontact{
+    display:block;
+    position:absolute;
+    background: rgb(182, 188, 191);
+    margin-left:-10px;
+    margin-top:12px;
+
+}
+.batta ul li:hover .subcontact ul{
+    display: block;
+    margin:5px;
+}
+.batta ul li:hover .subcontact ul li{
+
+    width:150px;
+    padding:10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.batta ul li:hover .subcontact ul li:last-child
+{
+    border-bottom: none;
+}
+.batta ul li:hover .subcontact ul li a:hover
+{
+    color:aqua
+}
+.fa-angle-right{
+    float:right;
+}
+.inside{
+    display: none;
+}
+
+.innerline:hover .inside{
+    position:absolute;
+    display:block;
+    margin-top:-20px;
+    margin-left:155px;
+    background:rgb(182, 188, 191);
+
+}
+/* .imgarrange
+{
+    width: 150px;
+    height: 250px;
+    position: absolute;
+    top: 25px;
+    left: 50px;
+} */
+.wrapper{
+    background-color: bisque;
+    width:90%;
+    margin:100px auto;
+    display:flex;
+    padding:20px;
+
+
+}
+.box{
+
+    background-color: blue;
+    height: 200px;
+    padding:25px;
+    flex: 1;
+    transition: 1s;
+    border: 3px solid #73AD21;
+    margin:auto;
+    width:60%;
+}
+.box:hover{
+     flex: 4;
+     background-color:aliceblue;
+}
+.box{
+    background: url("/notes/static/images/img_5terre.jpg");
+}
+
+.wrapper .box  .text{
+ position:absolute;
+ top:50%;
+ left:50%;
+ transform:translate(-50%,-50%) ;
+ width:80%;
+ color:black;
+ box-sizing: border-box;
+ padding: 25px;
+ z-index:1000;
+ text-shadow:5px 5px 10px black;
+}
+.wrapper .box  .text h2{
+    color:white;
+    line-height: 1.2;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: .5s;
+    transition-timing-function: linear;
+}
+
+.wrapper .box:hover .text h2{
+    transform:translateY(0);
+    opacity:100;
+    transition-delay: 0.5s;
+}
+.wrapper .box  .text p{
+    color:rgb(0, 0, 0);
+    line-height: 1.2;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: .5s;
+    transition-timing-function: linear;
+
+}
+.wrapper .box:hover  .text p{
+    transform: translateY(0);
+    opacity:1;
+    transition-delay: 0.6s;
+}
+
+
+/* box second image */
+.box1{
+
+    background-color: blue;
+    height: 200px;
+    padding:25px;
+    flex: 1;
+    transition: 1s;
+    border: 3px solid #73AD21;
+    margin:auto;
+    width:60%;
+}
+.box1:hover{
+     flex: 4;
+     background-color:aliceblue;
+}
+.box1{
+    background: url("/notes/static/images/img_5terre.jpg");
+}
+
+
+.halfcircle{
+    left:15px;
+    height:75px;
+    width:150px;
+    border-radius: 90px 90px 0 0;
+    margin:0px;
+    background-color:rgb(123, 148, 179);
+}
+.halfcircleBottom{
+    height:75px;
+    width:150px;
+    border-radius: 0px 0px 90px 90px;
+    margin:0px;
+    background-color:rgb(91, 110, 134);
+}
+.halfcircleBottom a {
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+
+.bo1 p{
+   font-weight:bold;
+   color:white;
+   font-family:'Monotype corsiva' ;
+   text-align:center;
+}
+.flex-container {
+    display: flex;
+    justify-content: center ;
+
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 16px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+.dropdown-menu{
+
+  background-color: #7b75bd;
+}
+
+.transparentbox p{
+    margin-top: 15%;
+    font-weight:bold;
+    font-size:60px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font:DarkRed;
+    text-align: center;
+    background-color:lightgray;
+    opacity :0.1;
+}
+/* yo part chai css ko table ra animation ko lagi */

@@ -1,0 +1,92 @@
+{% extends 'navigation.html' %}
+{% load static %}
+{% block body%}
+
+
+<div class="container1 mt-5 ">
+   <div class="row">
+    
+ </div>
+  <!-- Start Contact Area -->
+  <section class="htc__contact__area ptb--100 bg__white">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14129.749766004328!2d85.3231442!3d27.703777!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd6a23381c4e35c7e!2sKantipur%20City%20College!5e0!3m2!1sen!2snp!4v1662129912344!5m2!1sen!2snp" width="500" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 md-5">
+                <h2 class="title__line--6">INFORMATION</h2>
+                <div class="address">
+                    <div class="address__icon">
+                        <i class="icon-location-pin icons"></i>
+                    </div>
+                    <div class="address__details">
+                        <h2 class="ct__title">Our address</h2>
+                        <p>PUTALISADAK KATHMANDU </p>
+                    </div>
+                </div>
+                <div class="address">
+                    <div class="address__icon">
+                        <i class="icon-envelope icons"></i>
+                    </div>
+                    <div class="address__details">
+                        <h2 class="ct__title">openning hour</h2>
+                        <p>9 AM to 5PM  </p>
+                    </div>
+                </div>
+
+                <div class="address">
+                    <div class="address__icon">
+                        <i class="icon-phone icons"></i>
+                    </div>
+                    <div class="address__details">
+                        <h2 class="ct__title">Phone Number</h2>
+                        <p>98417777777</p>
+                    </div>
+                </div>
+            </div>      
+        </div>
+        <div class="row">
+            <div class="contact-form-wrap mt--60">
+                <div class="col-xs-12">
+                    <div class="contact-title">
+                        <h2 class="title__line--6 mt-5" >SEND A MAIL</h2>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <form id="contact-form" action="#" method="post">
+                        <div class="single-contact-form">
+                            <div class="contact-box name">
+                                <input type="text" id="name" name="name" placeholder="Your Name*">
+                                <input type="email" id="email" name="email" placeholder="Email*">
+                                <input type="email" id="mobile" name="mobile" placeholder="Mobile*">
+                            </div>
+                        </div>
+                        
+                        <div class="single-contact-form">
+                            <div class="contact-box message">
+                                <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="contact-btn">
+                            <button type="button" onclick="send_message()" class="fv-btn">Send MESSAGE</button>
+                            
+                        </div>
+                    </form>
+                    <div class="form-output">
+                        <p class="form-messege"></p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+<!-- End Contact Area -->
+</div>
+
+<br>
+</br>
+
+
+{% endblock %}

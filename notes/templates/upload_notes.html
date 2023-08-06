@@ -1,0 +1,111 @@
+{% extends 'usernavigation.html' %}
+{% load static %}
+{% block body%}
+
+
+<div class="container mt-1" >
+    <h2 class="text-center">UPLOAD NOTES</h2>
+            <HR>
+    <div class="row">
+
+        <div class="col-sm-6">
+        
+   
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <label>Branch</label>
+                <select class="form-control"  name="branch" > 
+                    <option value="">---Select Branch---</option>
+                    <option value="Computer Science">---Computer Science ---</option>
+                    <option value="Mechancial">---Mechanical ---</option>
+                    <option value="Civil">---Civil ---</option>
+                    <option value="Electrical">---Electrical ---</option>
+                    <option value="Electronics">---Electronics  ---</option>
+
+                       
+                </select>
+                <br>
+                <label>Semester</label>
+                <select class="form-control"  name="semester" > 
+                    <option value="">---Semester---</option>
+                    <option value="1st">-- 1st ---</option>
+                    <option value="2nd">---2nd ---</option>
+                    <option value="3rd">---3rd ---</option>
+                    <option value="4th">---4th ---</option>
+                    <option value="5th">---5th ---</option>
+                    <option value="6th">---6th  ---</option>
+                    <option value="7th">---7th  ---</option>
+                    <option value="8th">---8th  ---</option>
+
+                       
+                </select>
+                <br>
+
+               
+                <label>Subject</label>
+                <input type="text" class="form-control" placeholder="Enter Subject Name" name="subject" required> 
+                 <br>
+                <label>Notes File</label>
+                <input type= "file"  class="form-control"  name="notesfile" required> 
+                <br>
+                <label>File Type</label>
+
+                <select class="form-control"  name="filetype" > 
+                    <option value="">---Select File Type---</option>
+                    <option value="PDF">---PDF---</option>
+                    <option value="PPT">---PPT ---</option>
+                    <option value="DOC/DOCX">---DOC/DOCX ---</option>
+                    <option value="TXT">---TXT ---</option>
+                    <option value="Image">---IMAGE  ---</option>
+                    <option value="ZIP/RAR ">---ZIP/RAR  ---</option>
+
+                </select>
+
+                <label>Description</label >
+
+                <textarea rows="4" cols="50" name="description" required>
+</textarea>
+                <br>
+                 <input type=submit class=" btn btn-danger mt-2" value="SUBMIT" >
+            </form>
+        </div> 
+
+
+        <div class="col-sm-1">
+        
+            <img src ="{%  static 'images/10.jpg' %}" style="width:600px; height:85%" class="mt-2">
+         </div>
+
+
+
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+{% if error == "no" %}
+<script>
+    alert('Notes Uploaded Successfully');  
+    window.location=("{% url 'view_mynotes' %}");  
+</script> 
+{% endif %}       
+
+
+{% if error == "yes" %}
+<script>
+    alert('Something went wrong ,Try Again');
+</script>
+{% endif %}
+
+
+{% endblock %}

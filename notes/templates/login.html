@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body%}
+
+{% if error == "no" %}
+<script>
+    // swal("Login Sucessfull", "You clicked the button!", "success");
+    window.location=("{% url 'profile' %}");  
+</script> 
+{% endif %}       
+
+
+{% if error == "yes" %}
+<script>
+    swal("Login Unsucessfull", "Please login properly!", "error");
+</script>
+{% endif %}
+
+
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-6">
+            <h2 class="text-center">NEW USER</h2>
+            <HR>
+                <p> BY CREATING AN ACcount without our website you can get free notes</p>
+       <center> <a href="{% url 'signup' %}" class="btn btn-danger text-white mt-5">CREATE AN ACCOUNT</a></center>
+            </div>
+
+        <div class="col-sm-6">
+            <h2 class="text-center">USER LOGIN</h2>
+            <HR>
+            <form method="post">
+                {% csrf_token %}
+                <label>EMAIL ADDRESS</label>
+                   <input type="email" class="form-control" placeholder="Enter Email" name="emailid"> 
+                  <br>
+                    <label>PASSWORD</label>
+                 <input type="password"  class="form-control" placeholder="Enter password" name="pwd"> 
+                 <input type=submit class=" btn btn-danger mt-2" value="LOGIN">
+            </form>
+        </div> 
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}

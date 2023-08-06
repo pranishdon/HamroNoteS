@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% block body%}
+{% load static %}
+  <style>
+.image {
+    width:100%;
+    height:100%;
+    background:url("{% static 'images/index6.jpg' %}");
+    background-size: 200px 100px;
+    background-size: 100% auto;
+
+    
+   
+}
+
+
+.transparentbox {
+  background-color: #e3e0e6;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  top: 15%;
+  left: 11%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #6117c7;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  border: 2px solid #6117c7;
+  font-size: 18px;
+  text-transform: uppercase;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+
+
+
+}
+
+
+  </style>
+
+
+
+
+
+    	
+<div class="image">
+    <div class="transparentbox">
+       <div class="circle" >HAMRO NOTES</div>
+
+
+    </div>
+</div>
+
+
+
+
+
+<h4 class="text-center text-danger mt-5 mb-5">YES WE CAN SHARE THE FUTURE</h4>
+       <div class="flex-container mt-5 ">
+            <div class="flex-container">
+                 <div class="bo1">
+       <p class="halfcircle"><i class="text-center fas fa-user-circle text-white mt-4 " style="font-size:40px"></i></p>
+        <p class="halfcircleBottom" style="font-size: 20px"> <a href="{% url 'signup' %}">Create Account</a></p>
+       
+</div>
+</div>
+
+<div class="flex-container">
+    <div class="bo1">
+<p class="halfcircle"><i class="text-center fas fa-sign-in-alt text-white mt-4 " style="font-size:40px"></i></p>
+<p class="halfcircleBottom" style="font-size: 20px"><a href="{% url 'login' %}">Login</a> </p>
+</div>
+</div>
+
+<div class="flex-container">
+    <div class="bo1">
+<p class="halfcircle"><i class="text-center fas fa-upload text-white mt-4 " style="font-size:40px"></i></p>
+<p class="halfcircleBottom" style="font-size: 20px"><a href="{% url 'login' %}">Upload Notes</a></p>
+</div>
+</div>
+
+<div class="flex-container">
+    <div class="bo1">
+<p class="halfcircle"><i class="text-center fas fa-download text-white mt-4 " style="font-size:40px"></i></p>
+<p class="halfcircleBottom" style="font-size: 20px"><a href="{% url 'viewallnotes' %}">Download Notes</a></p>
+</div>
+</div>
+
+
+</div>
+
+<div class="sketchfab-embed-wrapper">
+     <iframe title="BOOK" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1270" height="500" src="https://sketchfab.com/models/2d6812b8d9c2439aa5e647b38ed9c047/embed?autospin=1&autostart=1&preload=1&ui_theme=dark&dnt=1"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/book-2d6812b8d9c2439aa5e647b38ed9c047?utm_medium=embed&utm_campaign=share-popup&utm_content=2d6812b8d9c2439aa5e647b38ed9c047" target="_blank" style="font-weight: bold; color: #1CAAD9;"> BOOK </a> by <a href="https://sketchfab.com/Amdyoussef?utm_medium=embed&utm_campaign=share-popup&utm_content=2d6812b8d9c2439aa5e647b38ed9c047" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Kantipur </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=2d6812b8d9c2439aa5e647b38ed9c047" target="_blank" style="font-weight: bold; color: #1CAAD9;">Hamro Notes</a></p></div>
+<marquee> KNOWLEDGE IS EVERY WHERE</marquee>
+<br>
+{% endblock %}
